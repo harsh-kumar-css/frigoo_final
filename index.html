@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="img/png" href="logo-foursquare.svg" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Frigoo</title>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -75,5 +76,35 @@
       <div class="foot_note"><p>2021 &#169; FRIGOO</p></div>
       <div class="author"><p>By - Harsh Kumar</p></div>
     </div>
+    <div class="preloader">
+      <div class="body">
+        <span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="base">
+          <span></span>
+          <div class="face"></div>
+        </div>
+      </div>
+      <div class="longfazers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Loading ...</h1>
+    </div>
   </body>
+  <script>
+    $(window).on("load", function () {
+      $(".preloader").fadeOut("slow");
+      $(".main-page").css("display", "flex");
+      $(".explore").css("display", "flex");
+      $(".container").css("display", "flex");
+      $(".footer").css("display", "flex");
+    });
+  </script>
 </html>
