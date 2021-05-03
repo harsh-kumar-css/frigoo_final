@@ -415,11 +415,10 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      filter: blur(1.5px);
+
       transform: scale(0.9);
       transition: 0.2s;
       &:hover {
-        filter: blur(0);
         z-index: 100;
         transform: scale(1);
         transition: 0.2s;
