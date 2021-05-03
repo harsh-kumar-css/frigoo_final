@@ -609,15 +609,6 @@ body {
   display: none;
 }
 
-.container:hover .card {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 .container .cards {
   height: 70%;
   width: 80%;
@@ -662,6 +653,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .container .cards .card:hover {
